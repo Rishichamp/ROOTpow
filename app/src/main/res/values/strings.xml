@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">ROOTpow</string>
+    <string-array name="Root">
+        <item>Power</item>
+        <item>Root</item>
+    </string-array>
+</resources>
