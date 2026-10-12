@@ -4,4 +4,5 @@
         <item>Power</item>
         <item>Root</item>
     </string-array>
+    <string name="action_button">Calculate</string>
 </resources>

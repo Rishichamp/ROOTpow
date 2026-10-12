@@ -13,3 +13,5 @@
 .externalNativeBuild
 .cxx
 local.properties
+# All IDE state stays local
+/.idea/
