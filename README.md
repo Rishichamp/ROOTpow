@@ -1,5 +1,7 @@
 # Power and Root Calculator Android App
 
+[![build](https://github.com/Rishichamp/ROOTpow/actions/workflows/build.yml/badge.svg)](https://github.com/Rishichamp/ROOTpow/actions/workflows/build.yml)
+
 This Android application calculates **power and root values** based on user input.
 
 The app allows users to compute:
@@ -87,6 +89,15 @@ Output: Answer = 2.00
 
 
 ---
+
+## 2026 update
+
+- **Tooling:** upgraded from Gradle 7.3 / AGP 7.2 (which don't run on the JDK 21 in current Android Studio) to Gradle 8.11.1, AGP 8.7.3, compileSdk 35 / targetSdk 34, Java 17 and current AndroidX libraries.
+- Typing just "." crashed the app; now it shows an error.
+- `Math.pow(-8, 1/3)` is NaN in Java, so odd roots of negative numbers failed; the cube root of -8 is now -2.
+- A root of degree 0, even roots of negatives and overflowing powers now show clear messages instead of NaN/Infinity.
+- The empty-field message was set on a hidden view, so it never appeared; the button reads **Calculate**.
+- **Tests:** 5 unit tests and 4 on-device UI tests, all passing on an Android 11 emulator, plus a 2,000-event monkey stress test with no crashes. GitHub Actions builds, unit-tests and lints the app on every push.
 
 ## Author
 
