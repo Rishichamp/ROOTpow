@@ -87,7 +87,6 @@ Output: Answer = 2.00
   <img src="rootpow_3.png" width="200">
 </p>
 
-
 ---
 
 ## 2026 update
